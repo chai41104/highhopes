@@ -18,6 +18,9 @@
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
+  <!-- Main CSS-->
+  <link href="css/main.css" rel="stylesheet" media="all">
+
 </head>
 
 <body id="page-top">
@@ -333,7 +336,57 @@
 
           <!-- Page Heading -->
           <h1 class="h3 mb-4 text-gray-800">Blank Page</h1>
-
+          <div class="card card-1">
+            <div class="card-body">
+              <div class="progress" id="js-progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                      <span class="progress-val">40%</span>
+                  </div>
+              </div>
+              <ul class="nav nav-tab">
+                  <li class="active">
+                      <a href="#tab1" data-toggle="tab">1</a>
+                  </li>
+                  <li>
+                      <a href="#tab2" data-toggle="tab">1</a>
+                  </li>
+                  <li>
+                      <a href="#tab3" data-toggle="tab">1</a>
+                  </li>
+              </ul>
+              <div class="tab-content">
+                  <div class="tab-pane active" id="tab1">
+                      <div class="input-group">
+                          <label class="label">Full name*:</label>
+                          <input class="input--style-1" type="text" name="fullname" placeholder="ex: Taylor Fuller">
+                      </div>
+                      <div class="btn-next-con">
+                          <a class="btn-next" href="javascript:openTab(1,2);">Next</a>
+                      </div>
+                  </div>
+                  <div class="tab-pane" id="tab2">
+                      <div class="input-group">
+                          <label class="label">Building Number:</label>
+                          <input class="input--style-1" type="text" name="buil-num" placeholder="02">
+                      </div>
+                      <div class="btn-next-con">
+                          <a class="btn-back" href="#tab1">back</a>
+                          <a class="btn-next" href="#">Next</a>
+                      </div>
+                  </div>
+                  <div class="tab-pane" id="tab3">
+                      <div class="input-group">
+                          <label class="label">Card Holder Name:</label>
+                          <input class="input--style-1" type="text" name="cardName" value="Matthew Wood">
+                      </div>
+                      <div class="btn-next-con">
+                          <a class="btn-back" href="#">back</a>
+                          <a class="btn-last" href="#">Submit</a>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- /.container-fluid -->
 
@@ -389,6 +442,14 @@
 
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
+
+  <!-- Vendor JS-->
+  <script src="vendor/jquery-validate/jquery.validate.min.js"></script>
+  <script src="vendor/bootstrap-wizard/bootstrap.min.js"></script>
+  <script src="vendor/bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
+
+  <!-- Main JS-->
+  <script src="js/global.js"></script>
 
 </body>
 
