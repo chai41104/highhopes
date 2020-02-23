@@ -1,13 +1,13 @@
-@import url(//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css);
+/* @import url(//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css); */
 
 .detailBox {
     border:1px solid #bbb;
-    margin:50px;
 }
 .titleBox {
     background-color:#fdfdfd;
     padding:10px;
 }
+
 .titleBox label{
   color:#444;
   margin:0;
