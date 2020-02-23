@@ -1,4 +1,4 @@
-const total = 3;
+const total = 6;
 function openTab(oldId, newId) {
     const percent = Math.round(newId / total * 100.0);
     $(`#tab${oldId}`).removeClass('active');
